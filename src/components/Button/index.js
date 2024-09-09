@@ -16,15 +16,15 @@ function Button({
     large = false,
     children,
     className,
-    leftIcon,
-    rightIcon,
-    onclick,
+    leftIcon = false,
+    rightIcon = false,
+    onClick,
     ...passProps
 }) {
     let Comp = 'button';
 
     const props = {
-        onclick,
+        onClick,
         ...passProps,
     };
 
